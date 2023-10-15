@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "274986368110",
+    "project_id": "debongo-app-7999",
+    "storage_bucket": "debongo-app-7999.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274986368110:android:17cf412c268cdf0163ba7f",
+        "android_client_info": {
+          "package_name": "com.example.debongo_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274986368110-oo75gc63glca93h22a18bjmm28n91fmj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKB-Q2tr0n3TfnTcKd1bcJSle89EUWWB0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "274986368110-oo75gc63glca93h22a18bjmm28n91fmj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "274986368110-5ubhq7dc6vqkn9dsckpa3aog95sjpgcd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.debongoApp.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
