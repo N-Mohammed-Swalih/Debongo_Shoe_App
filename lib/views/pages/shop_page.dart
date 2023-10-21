@@ -1,5 +1,5 @@
 import 'package:debongo_app/components/shoe_tile.dart';
-import 'package:debongo_app/views/pages/items_page.dart';
+import 'package:debongo_app/views/pages/see_all_items_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -75,7 +75,9 @@ class _ShopPageState extends State<ShopPage> {
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                   ),
                   GestureDetector(
-                    onTap: () => {},
+                    onTap: () => {
+                      Navigator.push(context, MaterialPageRoute(builder: ((context) =>const ShoeListPage())))
+                    },
                     child: const Text(
                       "See all",
                       style: TextStyle(fontWeight: FontWeight.bold),
