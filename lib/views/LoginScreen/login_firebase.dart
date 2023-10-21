@@ -23,18 +23,21 @@ class _LoginFireState extends State<LoginFire> {
           Padding(
             padding: const EdgeInsets.all(15.0),
             child: TextField(
-              decoration:const InputDecoration(
-                  border: OutlineInputBorder(), hintText: "UserName"),
+              decoration: const InputDecoration(
+                  border: OutlineInputBorder(), hintText: "Username"),
               controller: email,
             ),
           ),
           Padding(
             padding: const EdgeInsets.all(15.0),
             child: TextField(
-              decoration:const InputDecoration(
-                  border: OutlineInputBorder(), hintText: "PassWord"),
+              decoration: const InputDecoration(
+                  border: OutlineInputBorder(), hintText: "Password"),
               controller: pass,
             ),
+          ),
+          const SizedBox(
+            height: 30,
           ),
           ElevatedButton(
               onPressed: () {
@@ -45,8 +48,8 @@ class _LoginFireState extends State<LoginFire> {
                     .signIn(email: mail, password: pwd)
                     .then((result) {
                   if (result == null) {
-                    Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => const HomePage()));
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => const HomePage()));
                   } else {
                     ScaffoldMessenger.of(context)
                         .showSnackBar(SnackBar(content: Text(result)));
@@ -54,12 +57,15 @@ class _LoginFireState extends State<LoginFire> {
                 });
               },
               child: const Text('Login')),
+          const SizedBox(
+            height: 10,
+          ),
           TextButton(
               onPressed: () {
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => Register_fire()));
               },
-              child:const Text("Not a user ? register here!!"))
+              child: const Text("Not a user ? Register here!!"))
         ],
       ),
     );

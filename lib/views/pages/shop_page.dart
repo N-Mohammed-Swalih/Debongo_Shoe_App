@@ -1,4 +1,5 @@
 import 'package:debongo_app/components/shoe_tile.dart';
+import 'package:debongo_app/views/pages/items_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -58,24 +59,27 @@ class _ShopPageState extends State<ShopPage> {
             const Padding(
               padding: EdgeInsets.symmetric(vertical: 20.0),
               child: Text(
-                "Just do it,Nike In",
+                "You are you,Join the movement",
                 style: TextStyle(color: Colors.grey),
               ),
             ),
             //hot picks
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 25.0),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 25.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Text(
+                  const Text(
                     "Hot picks",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                   ),
-                  Text(
-                    "See all",
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                  GestureDetector(
+                    onTap: () => {},
+                    child: const Text(
+                      "See all",
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
                   )
                 ],
               ),
