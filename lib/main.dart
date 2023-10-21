@@ -1,9 +1,9 @@
+import 'package:debongo_app/models/cart.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-
-import 'views/home_firebase.dart';
-import 'views/splash_screen.dart';
+import 'package:provider/provider.dart';
+import 'views/pages/splash_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -17,7 +17,18 @@ void main() async {
   ));
   // to get the currently logined in user
   User? user = FirebaseAuth.instance.currentUser;
-  runApp(MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: user == null ? const IntroPage() : HomeFire()));
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ChangeNotifierProvider(
+      create: (context) => Cart(),
+      builder: (context, child) => const MaterialApp(
+          debugShowCheckedModeBanner: false, home: IntroPage()),
+    );
+  }
 }
