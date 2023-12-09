@@ -1,12 +1,11 @@
 import 'package:debongo_app/views/LoginScreen/login_firebase.dart';
 import 'package:debongo_app/views/pages/cart_page.dart';
-import 'package:debongo_app/views/pages/splash_screen.dart';
+import 'package:debongo_app/views/pages/settings_page.dart';
+import 'package:debongo_app/views/pages/shop_page.dart';
 import 'package:flutter/material.dart';
 
 import '../../components/bottomnav_bar.dart';
 import 'order_page.dart';
-import 'profile_page.dart';
-import 'shop_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -38,7 +37,7 @@ class _HomePageState extends State<HomePage> {
 //orders page
     const OrderPage(),
 ////settings page
-    const ProfilePage(),
+    const SettingsPage(),
   ];
 
   @override
