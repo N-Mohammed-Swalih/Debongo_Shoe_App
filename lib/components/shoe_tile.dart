@@ -20,7 +20,7 @@ class ShoeTile extends StatelessWidget {
           margin: const EdgeInsets.only(left: 20),
           width: MediaQuery.of(context).size.width * 0.79,
           decoration: BoxDecoration(
-              color: Colors.grey[200], borderRadius: BorderRadius.circular(10)),
+              color: Colors.white, borderRadius: BorderRadius.circular(10)),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
@@ -82,11 +82,11 @@ class ShoeTile extends StatelessWidget {
                         height: 60,
                         width: 50,
                         padding: const EdgeInsets.only(),
-                        decoration: const BoxDecoration(
-                          borderRadius: BorderRadius.only(
+                        decoration: BoxDecoration(
+                          borderRadius:const BorderRadius.only(
                               topLeft: Radius.circular(12),
                               bottomRight: Radius.circular(12)),
-                          color: Colors.black,
+                          color: Colors.blue.shade400,
                         ),
                         child: const Icon(
                           Icons.add,

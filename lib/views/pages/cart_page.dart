@@ -21,9 +21,10 @@ class _CartPageState extends State<CartPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   //heading of the page
-                  const Text(
+                   Text(
                     "My Cart",
                     style: TextStyle(
+                      color: Colors.blue.shade600,
                       fontWeight: FontWeight.bold,
                       fontSize: 24,
                     ),
@@ -50,11 +51,11 @@ class _CartPageState extends State<CartPage> {
                     width: MediaQuery.of(context).size.width,
                     height: 50,
                     decoration: BoxDecoration(
-                        color: Colors.black87,
+                        color: Colors.blue,
                         borderRadius: BorderRadius.circular(10)),
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.black),
+                          backgroundColor: Colors.blue.shade600),
                       onPressed: () {},
                       child: const Text(
                         "Place Order",

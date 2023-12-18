@@ -51,17 +51,17 @@ class _HomePageState extends State<HomePage> {
               onPressed: () {
                 Scaffold.of(context).openDrawer();
               },
-              icon: const Padding(
+              icon:  Padding(
                 padding: EdgeInsets.only(left: 10.0),
                 child: Icon(
                   Icons.menu,
-                  color: Colors.black,
+                  color: Colors.blue.shade600,
                 ),
               ),
             ),
           )),
       drawer: Drawer(
-        backgroundColor: Colors.black54,
+        backgroundColor: Colors.blue.shade600,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

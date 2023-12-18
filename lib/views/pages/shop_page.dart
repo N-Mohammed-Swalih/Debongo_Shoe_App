@@ -21,9 +21,14 @@ class _ShopPageState extends State<ShopPage> {
 //alert the users,shoesuccesfully added
     showDialog(
         context: context,
-        builder: (context) => const AlertDialog(
-              title: Text("Successfully added!"),
-              content: Text("Check your cart"),
+        builder: (context) => AlertDialog(
+              title: const Text(
+                "Successfully added!",
+              ),
+              content: Text(
+                "Check your cart",
+                style: TextStyle(color: Colors.blue.shade600),
+              ),
             ));
   }
 
@@ -37,30 +42,31 @@ class _ShopPageState extends State<ShopPage> {
               margin: const EdgeInsets.symmetric(horizontal: 25),
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                  color: Colors.grey[200],
+                  color: Colors.blue[100],
                   borderRadius: BorderRadius.circular(20)),
-              child: const Row(
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
                     "Search",
                     style: TextStyle(
-                        fontWeight: FontWeight.w300, color: Colors.grey),
+                        fontWeight: FontWeight.w300,
+                        color: Colors.blue.shade600),
                   ),
                   Icon(
                     Icons.search,
-                    color: Colors.grey,
+                    color: Colors.blue.shade600,
                   ),
                 ],
               ),
             ),
 
             //message
-            const Padding(
+            Padding(
               padding: EdgeInsets.symmetric(vertical: 20.0),
               child: Text(
                 "You are you,Join the movement",
-                style: TextStyle(color: Colors.grey),
+                style: TextStyle(color: Colors.blue.shade600),
               ),
             ),
             //hot picks
@@ -76,7 +82,10 @@ class _ShopPageState extends State<ShopPage> {
                   ),
                   GestureDetector(
                     onTap: () => {
-                      Navigator.push(context, MaterialPageRoute(builder: ((context) =>const ShoeListPage())))
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: ((context) => const ShoeListPage())))
                     },
                     child: const Text(
                       "See all",
@@ -87,7 +96,7 @@ class _ShopPageState extends State<ShopPage> {
               ),
             ),
             const SizedBox(
-              height: 10,
+              height: 20,
             ),
             //list of the shoes for sale
             Expanded(

@@ -22,7 +22,7 @@ class _CartItemState extends State<CartItem> {
   Widget build(BuildContext context) {
     return Container(
         decoration: BoxDecoration(
-            color: Colors.black12, borderRadius: BorderRadius.circular(8)),
+            color: Colors.blue.shade100, borderRadius: BorderRadius.circular(8)),
         margin: const EdgeInsets.only(bottom: 20),
         child: ListTile(
           leading: Image.asset(widget.shoe.imagePath),

@@ -28,20 +28,21 @@ class IntroPage extends StatelessWidget {
 
             //title
 
-            const Text(
+             Text(
               "You are you.",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
+                color: Colors.blue.shade600,
                 fontSize: 25,
               ),
             ),
 
             //subtile
-            const Text(
+             Text(
               "Join the moment",
               style: TextStyle(
                 fontWeight: FontWeight.w300,
-                color: Colors.grey,
+                color: Colors.blue.shade600,
                 fontSize: 13,
               ),
             ),
