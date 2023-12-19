@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
               onPressed: () {
                 Scaffold.of(context).openDrawer();
               },
-              icon:  Padding(
+              icon: Padding(
                 padding: EdgeInsets.only(left: 10.0),
                 child: Icon(
                   Icons.menu,

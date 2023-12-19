@@ -17,9 +17,11 @@ class _LoginFireState extends State<LoginFire> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Login")),
       body: Column(
         children: [
+          Image.asset("assets/login.png",
+              height: MediaQuery.of(context).size.height * .5,
+              width: MediaQuery.of(context).size.width),
           Padding(
             padding: const EdgeInsets.all(15.0),
             child: TextField(

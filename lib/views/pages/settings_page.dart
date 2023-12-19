@@ -5,27 +5,23 @@ class SettingsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body:  Padding(
-              padding: EdgeInsets.symmetric(horizontal: 25.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  //heading of the page
-                  Text(
-                    "Settings",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 24,
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 50,
-                  ),
-                  
-                ]
-              )
-      )
-    );
+    return Scaffold(
+        body: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 25.0),
+            child:
+                Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              //heading of the page
+              Text(
+                "Settings",
+                style: TextStyle(
+                  color: Colors.blue.shade600,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 24,
+                ),
+              ),
+              const SizedBox(
+                height: 50,
+              ),
+            ])));
   }
 }
