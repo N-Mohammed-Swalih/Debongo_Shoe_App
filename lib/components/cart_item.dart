@@ -29,12 +29,19 @@ class _CartItemState extends State<CartItem> {
           leading: Image.asset(widget.shoe.imagePath),
           title: Text(widget.shoe.name),
           subtitle: Text("Rs " + widget.shoe.price),
-          trailing: IconButton(
-              icon: Icon(
-                Icons.delete,
-              ),
-              onPressed: removeItemsfromCart,
-              tooltip: "Remove from cart"),
+          trailing: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text("Qty :  ${widget.shoe.quantity} "),
+              IconButton(
+                  icon: Icon(
+                    Icons.delete,
+                  ),
+                  onPressed: removeItemsfromCart,
+                  tooltip: "Remove from cart"),
+            ],
+          ),
         ));
   }
 }

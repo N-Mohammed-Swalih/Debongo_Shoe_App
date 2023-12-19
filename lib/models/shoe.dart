@@ -3,11 +3,13 @@ class Shoe{
   final String price;
   final String imagePath;
   final String  description;
+  final int quantity;
   
   Shoe({required this.name,
   required this.price,
   required this.imagePath,
-  required this.description
+  required this.description,
+  this.quantity=1
   });
 
 }
